@@ -24,6 +24,10 @@ h1 {
 
 }
 
+p {
+	margin-top: 5px;
+}
+
 #rules {
 	margin-top: 40px;
 	
@@ -41,6 +45,11 @@ h1 {
 #crystals {
 	margin-top: 30px;
 }
+
+#total {
+	margin-top: 60px;
+}
+
 
 #score {
 	margin-top: 10px;
