@@ -11,3 +11,30 @@
     // If score > random.number:
         // Losses++
         // Game restarts
+
+// Need function sum() to add crystal #s together
+
+
+// ---------------------------------------------------------------------------
+
+
+
+// Setting variable for randomNumber so computer will generate a random number
+var randomNumber = Math.floor((Math.random() * 102) + 19);
+// Set randomNumber to console to make sure it's working
+console.log(randomNumber);
+
+
+// Setting variables equal to 0
+var wins = 0;
+var losses = 0;
+
+
+$(document).ready(function() {
+    // appended randomNumber to the #number empty div
+    $("#number").append(randomNumber);
+
+    // appending wins and losses to scoreboard
+    $("#wins").append("Wins: " + wins);
+    $("#losses").append("Losses: " + losses);
+});

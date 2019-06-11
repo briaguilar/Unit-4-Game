@@ -18,3 +18,30 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+h1 {
+	font-size: 60px;
+
+}
+
+#rules {
+	margin-top: 40px;
+	
+}
+
+#number {
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+#scoreboard {
+	margin-top: 30px;
+}
+
+#crystals {
+	margin-top: 30px;
+}
+
+#score {
+	margin-top: 10px;
+}
