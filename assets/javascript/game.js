@@ -69,13 +69,23 @@ $(document).ready(function () {
     var crystal4Random = Math.floor((Math.random() * 13) + 1) //yellow crystal
     console.log("Yellow crystal random number: " + crystal4Random);
 
+    // When you click on crystal...
+        // add # to score
+        // in order to do that:
+        // example:
+        // $("#diamond").click(function() {
+            // cystal1Random.val() ; 
+        // })
+
+
     // Setting an onclick method for the diamond crystal image
     $("#diamond").click(function () {
         // Pushing crystalRandom number to #score
-        $("#score").text(crystal1Random);
+        
     });
     $("#blueCrystal").click(function() {
-        $("#score").text(crystal2Random);
+        
+        
     });
     $("#greenCrystal").click(function() {
         $("#score").text(crystal3Random);
@@ -83,6 +93,36 @@ $(document).ready(function () {
     $("#yellowCrystal").click(function() {
         $("#score").text(crystal4Random);
     });
+
+
+    // creating global function for resetting a new game
+    function newGame() {
+        $("#number").append(randomNumber);
+        $("#diamond").click(function () {
+            // Pushing crystalRandom number to #score
+            score = $("#score").text(crystal1Random);
+        });
+        $("#blueCrystal").click(function() {
+            score = $("#score").text(crystal2Random);
+        });
+        $("#greenCrystal").click(function() {
+            $("#score").text(crystal3Random);
+        });
+        $("#yellowCrystal").click(function() {
+            $("#score").text(crystal4Random);
+        });
+    }
+
+
+    // Rules for the game
+    if (score === randomNumber) {
+        newGame();
+        wins++;
+    }
+    else if (score > randomNumber) {
+        newGame();
+        losses++;
+    }
 
     
 });

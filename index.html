@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="assets\javascript\game.js"></script>
     <title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Montserrat|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
 </head>
+
 <body>
-    <h1>Crystals Collector</h1>
-    <div id="rules">
-        <p>You will be given a random number at the start of the game.</p>
-        <p> There are four crystals below. By clicking on a crystal you will add a specific amount
-            of points to your local score.
-        </p>
-        <p>You win the game by matching your total score to random number, you will lose the game if
-            your total score goes above the random number.
-        </p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
-    </div>
+    <div class="container">
 
-    <div id="number"></div>
-    
-    <div id="scoreboard">
-        <p id="wins"></p>
-        <p id="losses"></p>
-    </div>
-    
-    <div id="crystals">
-        <img src="http://clipground.com/images/berg-crystal-clipart-19.jpg" alt="red diamond" height= 70px id="diamond">
-        <img src="http://www.clker.com/cliparts/Z/y/B/N/V/a/blue-gem-stones-hi.png" alt="blue crystals" height= 90px id="blueCrystal">
-        <img src="http://clipart-library.com/data_images/101884.png" alt="green crystal" height= 70px id="greenCrystal">
-        <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Yellow_Gem_PNG_Clip_Art_Image.png?m=1466391301" alt="yellow crystal" height= 70px id="yellowCrystal">
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>Crystal Collector</h1>
+            </div>
+        </div>
 
-    <p id="total">Your total score is: </p>
 
-    <div id="score"></div>
-    
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p id="rules">
+                    You will be given a random number at the start of the game.
+                    <br>
+                    <br>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount
+                    of points to your local score.
+                    <br>
+                    <br>
+                    You win the game by matching your total score to random number, you will lose the game if
+                    your total score goes above the random number.
+                    <br>
+                    <br>
+                    The value of each crystal is hidden from you until you click on it.
+                    Each time when the game starts, the game will change the values of each crystal.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <div id="number"></div>
+            </div>
+
+            <div class="col-md-2" id="scoreboard">
+                <p id="wins"></p>
+                <p id="losses"></p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div id="crystals">
+                    <img src="http://clipground.com/images/berg-crystal-clipart-19.jpg" alt="red diamond" height=70px
+                        id="diamond">
+                    <img src="http://www.clker.com/cliparts/Z/y/B/N/V/a/blue-gem-stones-hi.png" alt="blue crystals"
+                        height=90px id="blueCrystal">
+                    <img src="http://clipart-library.com/data_images/101884.png" alt="green crystal" height=70px
+                        id="greenCrystal">
+                    <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Yellow_Gem_PNG_Clip_Art_Image.png?m=1466391301"
+                        alt="yellow crystal" height=70px id="yellowCrystal">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <p id="total">Your total score is: </p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <div id="score"></div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
