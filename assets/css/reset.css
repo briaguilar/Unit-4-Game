@@ -19,6 +19,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body, html {
+	height: 100%;
+}
+
 body {
 	background-image: url("https://graphicburger.com/wp-content/uploads/2014/02/Seamless-Polygon-Backgrounds-Vol2-full.jpg");
 	background-size: 100%;
@@ -31,6 +35,8 @@ h1 {
 	opacity: .9;
 	font-family: 'Lobster', cursive;
 	text-align: center;
+	padding: 10px 10px;
+	border: black solid 5px;
 }
 
 p {
@@ -43,6 +49,8 @@ p {
 	font-family: 'Indie Flower', cursive;
 	font-size: 25px;
 	padding: 20px;
+	padding-bottom: 30px;
+	border: black solid 2px;
 }
 
 #number {
@@ -50,10 +58,12 @@ p {
 	margin-top: 70px;
 	background-color: white;
 	text-align: center;
-	height: 100px;
+	height: 105px;
 	font-family: 'Montserrat', sans-serif;
+	color: rgb(221, 61, 109);
 	border: solid black 3px;
-	box-shadow: 5px 5px;
+	box-shadow: black 5px 5px;
+	padding-top: 5px;
 }
 
 #scoreboard {
@@ -61,28 +71,40 @@ p {
 	background-color: white;
 	border: solid black 3px;
 	box-shadow: 5px 5px;
-	padding: 15px;
 	padding-left: 30px;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 30px;
 }
 
 #crystals {
 	margin-top: 30px;
+	text-align: center;
+	
+}
+
+#crystals:hover {
+	cursor: pointer;
 }
 
 #total {
 	margin-top: 60px;
 	background-color: white;
 	text-align: center;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 25px;
+	border: solid black 3px;
+	box-shadow: 5px 5px;
 }
 
 
 #score {
-	margin-top: 10px;
-	font-size: 60px;
+	margin-top: 30px;
+	font-size: 65px;
 	background-color: white;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	border: solid black 3px;
 	box-shadow: 5px 5px;
 	margin-bottom: 100px;
+	padding: 10px;
 }
